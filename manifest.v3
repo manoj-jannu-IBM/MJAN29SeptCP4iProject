@@ -13,17 +13,18 @@
     <value name="WmSalesforceProvider">12.0.0.0.23</value>
     <value name="WmJDBCAdapter">10.3.0.0.34</value>
     <value name="DADA_GlobalVariable1">1.0</value>
+    <value name="DADA_RefDataDocTypeTests">1.0</value>
   </record>
   <null name="lazy_load_node_types"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">37</value>
+  <value name="build">38</value>
   <null name="description"/>
   <value name="created_date">29-09-2026 06:52:41 GMT</value>
   <null name="extendedProperties"/>
   <value name="target_server_version">12.1.0.0</value>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-09-29T07:11:37.242068398Z</value>
+  <value name="lastUpdated">2026-09-29T07:12:10.023596474Z</value>
   <value name="creator">Jayesh Champalal Sahu</value>
 </Values>

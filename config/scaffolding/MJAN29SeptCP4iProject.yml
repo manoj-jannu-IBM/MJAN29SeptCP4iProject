@@ -16,6 +16,12 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: DADA_GlobalVariable1
+  version: "1.0"
+  gitServerName: ABSKPublic
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
+- name: DADA_RefDataDocTypeTests
   gitServerName: ABSKPublic
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -33,6 +39,8 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: DADA_RefDataDocTypeTests
+    version: "1.0"
 - serviceName: project.mjan29septcp4i.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:GetData
   packages:
   - name: MJAN29SeptCP4iProject
@@ -45,6 +53,8 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: DADA_RefDataDocTypeTests
+    version: "1.0"
 - serviceName: project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:SFCp4iBasicAuth
   packages:
   - name: MJAN29SeptCP4iProject
@@ -57,6 +67,8 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: DADA_RefDataDocTypeTests
+    version: "1.0"
 - serviceName: project.mjan29septcp4i.integrations:CSFlow
   packages:
   - name: MJAN29SeptCP4iProject
@@ -69,6 +81,8 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: DADA_RefDataDocTypeTests
+    version: "1.0"
 - serviceName: project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:SFBasicAuthCP4iCreateAccount
   packages:
   - name: MJAN29SeptCP4iProject
@@ -81,6 +95,8 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: DADA_RefDataDocTypeTests
+    version: "1.0"
 - serviceName: project.mjan29septcp4i.integrations:DBTest
   packages:
   - name: MJAN29SeptCP4iProject
@@ -93,6 +109,8 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: DADA_RefDataDocTypeTests
+    version: "1.0"
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false

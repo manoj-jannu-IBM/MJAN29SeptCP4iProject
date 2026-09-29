@@ -1,0 +1,27 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: MJAN29SeptCP4iProject
+  gitServerName: ABSKPublic
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
+configurationVariables:
+  jdbc.SAP TxStore Pool.maxConns: "10"
+  jdbcfunc.SAPTxStore.failFastMode: false
+  jdbc.SAP TxStore Pool.poolThreshold: "0"
+  jdbc.SAP TxStore Pool.dbURL: jdbc:mysql://localhost:3306/SAPTRANSACTIONSTORE?useSSL=false&characterEncoding=utf-8&autoReconnect=true&maxReconnects=5&sessionVariables=wait_timeout=2147483
+  jdbc.SAP TxStore Pool.spyenabled: "false"
+  jdbc.SAP TxStore Pool.useSSL: "false"
+  jdbc.SAP TxStore Pool.waitingThread: "10"
+  jdbc.SAP TxStore Pool.description: Connection Pool for the SAP Transaction Store
+  jdbc.SAP TxStore Pool.password: "{AES}nrGf3u7Wt20hFBGh5ZeEuQ=="
+  jdbc.SAP TxStore Pool.spyparms: SpyAttributes=(log=(file)logs/spy/SAP_TxStore_Pool.log;logTName=yes;timestamp=yes)
+  jdbc.SAP TxStore Pool.snoopenabled: "false"
+  jdbc.SAP TxStore Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/SAP_TxStore_Pool.log;ddtdbg.ProtocolTraceShowTime=true
+  jdbc.SAP TxStore Pool.expireTime: "60000"
+  jdbc.SAP TxStore Pool.minConns: "5"
+  jdbc.SAP TxStore Pool.userid: root
+  jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
+  jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="enabled">yes</value>
+  <value name="lazy_load">yes</value>
+  <value name="system_package">no</value>
+  <value name="version">1.0</value>
+  <value name="name">MJAN29SeptCP4iProject</value>
+  <null name="startup_services"/>
+  <null name="shutdown_services"/>
+  <null name="replication_services"/>
+  <null name="requires"/>
+  <null name="lazy_load_node_types"/>
+  <null name="listACL"/>
+  <value name="webappLoad">yes</value>
+  <value name="reloadWithDependentPackage">yes</value>
+  <value name="build">1</value>
+  <null name="description"/>
+  <value name="created_date">29-09-2026 06:52:41 GMT</value>
+  <null name="extendedProperties"/>
+  <value name="target_server_version">12.1.0.0</value>
+  <value name="isProjectPackage">true</value>
+  <value name="lastUpdated">2026-09-29T06:52:43.913082975Z</value>
+</Values>

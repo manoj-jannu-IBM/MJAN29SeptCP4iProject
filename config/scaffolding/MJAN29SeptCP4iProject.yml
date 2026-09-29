@@ -46,6 +46,12 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: JMS2waySSL
+  version: "1.0"
+  gitServerName: ABSKPublic
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
+- name: JMSTest
   gitServerName: ABSKPublic
   gitUrl: https://github.com/prabhakarsag
   gitUsername: manoj-jannu-IBM
@@ -60,6 +66,8 @@ services:
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
     version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
@@ -83,6 +91,8 @@ services:
     version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
+  - name: JMSTest
+    version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
   - name: WmSalesforceProvider
@@ -105,6 +115,8 @@ services:
     version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
+  - name: JMSTest
+    version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
   - name: WmSalesforceProvider
@@ -126,6 +138,8 @@ services:
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
     version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">CloudConnectionNode</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:SFCp4iBasicAuth</value>
+  <value name="node_pkg">MJAN29SeptCP4iProject</value>
+  <record name="node_hints" javaclass="com.wm.util.Values">
+    <value name="createdBy">abhk</value>
+    <value name="modifiedBy">abhk</value>
+    <value name="createdDate">2026-09-29T06:54:26.310938574Z</value>
+    <value name="lastModifiedDate">2026-09-29T06:54:26.310938574Z</value>
+  </record>
+  <value name="is_public">false</value>
+  <value name="cloudNodeVersion">1</value>
+  <record name="cloudNodeProperties" javaclass="com.wm.util.Values">
+    <number name="connectionNodeVersion" type="Integer">1</number>
+    <value name="connectorID">com.webmethods.cloudstreams.salesforce_v53</value>
+    <value name="providerName">WmSalesforceProvider</value>
+    <value name="providerConnectionType">sagcloud</value>
+    <record name="connectionGroupProperties" javaclass="com.wm.util.Values">
+      <value name="pr.protocolVersion">HTTP/1.1</value>
+      <value name="cn.providerUrl">https://orgfarm-f511aefe02-dev-ed.develop.my.salesforce.com/services/Soap/u/53.0</value>
+      <value name="cn.retryCount">3</value>
+      <value name="cn.socketStaleCheck">true</value>
+      <value name="cn.tcpNoDelay">false</value>
+      <value name="cn.enableCompression">false</value>
+      <value name="cn.keepAliveInterval">300000</value>
+      <value name="cn.reuseAddr">false</value>
+      <value name="cn.truststoreAlias"></value>
+      <value name="cn.sniServerName"></value>
+      <value name="pr.userAgent">Cloudstreams</value>
+      <value name="cr.preemptiveAuthEnabled">false</value>
+      <value name="cn.enableSNI">true</value>
+      <value name="cn.socketLinger">-1</value>
+      <value name="rh.requestHeaderNames">Content-Type,SOAPAction</value>
+      <value name="cn.validateAfterInactivity">1000</value>
+      <value name="cn.readTimeout">180000</value>
+      <value name="cr.securityRealm"></value>
+      <value name="cn.sockBuffSize">8192</value>
+      <value name="cn.hostnameVerifier">org.apache.http.conn.ssl.DefaultHostnameVerifier</value>
+      <value name="cn.idleTimeout">-1</value>
+      <value name="cr.authSchemeType">none</value>
+      <value name="pr.serverRedirectMax">5</value>
+      <value name="pr.httpContentCharSet">ISO-8859-1</value>
+      <value name="pr.useChunking">false</value>
+      <value name="cr.username">rima.barman.b2b4497cd227@agentforce.com</value>
+      <value name="pr.useExpectCont">false</value>
+      <value name="cn.retryIfRequestSentOk">true</value>
+      <value name="pr.followServerRedirects">true</value>
+      <value name="rh.requestHeaderValues">text/xml,login</value>
+      <value name="cn.connectTimeout">180000</value>
+      <value name="cr.password">project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:SFCp4iBasicAuth.cr.password</value>
+      <value name="pr.allowCircularRedirects">true</value>
+      <value name="cn.clientKeyAlias"></value>
+      <value name="cn.keystoreAlias"></value>
+    </record>
+    <array name="passmanHandles" type="value" depth="1">
+      <value>project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:SFCp4iBasicAuth.cr.password</value>
+    </array>
+    <record name="connectionManagerProperties" javaclass="com.wm.util.Values">
+      <value name="expireTimeout">1000</value>
+      <value name="timeoutType">fixed</value>
+      <value name="minimumPoolSize">1</value>
+      <value name="blockTimeout">1000</value>
+      <value name="sessionExpiry">14</value>
+      <value name="poolIncrementSize">1</value>
+      <value name="startupRetryCount">0</value>
+      <value name="poolable">true</value>
+      <value name="startupBackoffSecs">10</value>
+      <value name="maximumPoolSize">10</value>
+    </record>
+    <array name="formattableFields" type="value" depth="1">
+    </array>
+    <value name="connectionEnabled">true</value>
+  </record>
+</Values>

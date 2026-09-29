@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <value name="DataStoreClass">com.webmethods.sc.security.passman.impl.datastore.DefaultDataStore</value>
+    <record name="DataStoreParams" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="fileName">packages/MJAN29SeptCP4iProject/config/txnPassStore.dat</value>
+    </record>
+    <value name="MasterPasswordClass">com.webmethods.sc.security.passman.impl.masterpw.AesEcbP5MasterPassword</value>
+    <record name="MasterPwParams" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="fileName">packages/MJAN29SeptCP4iProject/config/ae256mpwd.dat</value>
+      <value name="repeatLimit">4</value>
+    </record>
+    <record name="EncryptorInfo" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="DefaultEncryptorCode">AesEcbPkcs5</value>
+      <value name="SanityEncryptorCode">AesEcbPkcs5</value>
+      <array name="EncryptorList" type="record" depth="1">
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="EncryptorClass">com.webmethods.sc.security.passman.impl.encryption.EncryptorImpl</value>
+        </record>
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="EncryptorClass">com.webmethods.sc.security.passman.impl.encryption.DefaultEncryptor</value>
+        </record>
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="EncryptorClass">com.webmethods.sc.security.passman.impl.encryption.AesEcbP5Encryptor</value>
+        </record>
+      </array>
+    </record>
+  </record>
+</IDataXMLCoder>

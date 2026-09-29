@@ -15,10 +15,17 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: DADA_GlobalVariable1
+  gitServerName: ABSKPublic
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
 services:
 - serviceName: project.mjan29septcp4i.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:DBCp4i
   packages:
   - name: MJAN29SeptCP4iProject
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.23
@@ -30,6 +37,8 @@ services:
   packages:
   - name: MJAN29SeptCP4iProject
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.23
   - name: WmJDBCAdapter
@@ -39,6 +48,8 @@ services:
 - serviceName: project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:SFCp4iBasicAuth
   packages:
   - name: MJAN29SeptCP4iProject
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.23
@@ -50,6 +61,8 @@ services:
   packages:
   - name: MJAN29SeptCP4iProject
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.23
   - name: WmJDBCAdapter
@@ -60,6 +73,8 @@ services:
   packages:
   - name: MJAN29SeptCP4iProject
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.23
   - name: WmJDBCAdapter
@@ -69,6 +84,8 @@ services:
 - serviceName: project.mjan29septcp4i.integrations:DBTest
   packages:
   - name: MJAN29SeptCP4iProject
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.23

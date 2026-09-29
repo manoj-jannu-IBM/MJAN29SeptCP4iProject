@@ -8,6 +8,7 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: WmSalesforceProvider
+  version: 12.0.0.0.23
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 services:

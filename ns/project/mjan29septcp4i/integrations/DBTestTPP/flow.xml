@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="SIQAJDBCAdapterTests" SERVICE="SIQAJDBCAdapterTests.adapterServices:getData">
+  <COMMENT></COMMENT>
+  <STEP_LEVEL_PROPERTIES>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <number name="ttl" type="Long">120</number>
+    <Boolean name="isAsync">false</Boolean>
+    <value name="agentName">LOCAL</value>
+    <value name="displayName">LOCAL</value>
+    <value name="agentGroup">default</value>
+    <value name="executionPlaneType">local</value>
+  </record>
+</Values>
+</STEP_LEVEL_PROPERTIES>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="false" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$internal_runtimeAlias;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">LOCAL</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="false" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$internal_agentGroup;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">default</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</INVOKE>
+</FLOW>

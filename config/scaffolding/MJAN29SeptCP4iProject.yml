@@ -18,6 +18,18 @@ services:
     version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.23
+- serviceName: project.mjan29septcp4i.integrations:CSFlow
+  packages:
+  - name: MJAN29SeptCP4iProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+- serviceName: project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:SFBasicAuthCP4iCreateAccount
+  packages:
+  - name: MJAN29SeptCP4iProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false

@@ -52,11 +52,13 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: JMSTest
+  version: "1.0"
   gitServerName: ABSKPublic
   gitUrl: https://github.com/prabhakarsag
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: JDBC_without_required_jar
+  version: "1.0"
   gitServerName: ABSKPublic
   gitUrl: https://github.com/prabhakarsag
   gitUsername: manoj-jannu-IBM
@@ -73,6 +75,8 @@ services:
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
+    version: "1.0"
+  - name: JDBC_without_required_jar
     version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
@@ -98,6 +102,8 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: JDBC_without_required_jar
+    version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
   - name: WmSalesforceProvider
@@ -121,6 +127,8 @@ services:
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
+    version: "1.0"
+  - name: JDBC_without_required_jar
     version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
@@ -146,6 +154,8 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: JDBC_without_required_jar
+    version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
   - name: WmSalesforceProvider
@@ -158,21 +168,55 @@ services:
     version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
+- serviceName: project.mjan29septcp4i.integrations:GlobalvariableTest
+  packages:
+  - name: MJAN29SeptCP4iProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: JDBC_without_required_jar
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: DADA_RefDataDocTypeTests
+    version: "1.0"
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: GB_1:readGlobalvariable
+  packages:
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+- serviceName: pub.globalVariable:getGlobalVariable
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1211
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
-  jdbc.SAP TxStore Pool.spyparms: SpyAttributes=(log=(file)logs/spy/SAP_TxStore_Pool.log;logTName=yes;timestamp=yes)
-  jdbc.SAP TxStore Pool.snoopenabled: "false"
   jdbcfunc.SAPTxStore.failFastMode: false
-  jdbc.SAP TxStore Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/SAP_TxStore_Pool.log;ddtdbg.ProtocolTraceShowTime=true
   jdbc.SAP TxStore Pool.poolThreshold: "0"
   jdbc.SAP TxStore Pool.dbURL: jdbc:mysql://localhost:3306/SAPTRANSACTIONSTORE?useSSL=false&characterEncoding=utf-8&autoReconnect=true&maxReconnects=5&sessionVariables=wait_timeout=2147483
-  jdbc.SAP TxStore Pool.expireTime: "60000"
   jdbc.SAP TxStore Pool.spyenabled: "false"
-  jdbc.SAP TxStore Pool.minConns: "5"
-  jdbc.SAP TxStore Pool.userid: root
   jdbc.SAP TxStore Pool.useSSL: "false"
   jdbc.SAP TxStore Pool.waitingThread: "10"
-  jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
   jdbc.SAP TxStore Pool.description: Connection Pool for the SAP Transaction Store
   jdbc.SAP TxStore Pool.password: "{AES}nrGf3u7Wt20hFBGh5ZeEuQ=="
+  jdbc.SAP TxStore Pool.spyparms: SpyAttributes=(log=(file)logs/spy/SAP_TxStore_Pool.log;logTName=yes;timestamp=yes)
+  jdbc.SAP TxStore Pool.snoopenabled: "false"
+  jdbc.SAP TxStore Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/SAP_TxStore_Pool.log;ddtdbg.ProtocolTraceShowTime=true
+  jdbc.SAP TxStore Pool.expireTime: "60000"
+  jdbc.SAP TxStore Pool.minConns: "5"
+  jdbc.SAP TxStore Pool.userid: root
+  jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool

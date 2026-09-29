@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">interface</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">project.mjan29septcp4i.documenttypes</value>
+  <value name="node_pkg">MJAN29SeptCP4iProject</value>
+  <record name="node_hints" javaclass="com.wm.util.Values">
+    <value name="createdBy">abhk</value>
+    <value name="modifiedBy">abhk</value>
+    <value name="createdDate">2026-09-29T06:52:45.865684290Z</value>
+    <value name="lastModifiedDate">2026-09-29T06:52:45.865684290Z</value>
+  </record>
+  <value name="is_public">false</value>
+</Values>

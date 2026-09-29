@@ -12,10 +12,21 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
 - serviceName: project.mjan29septcp4i.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:DBCp4i
+  packages:
+  - name: MJAN29SeptCP4iProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.mjan29septcp4i.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:GetData
   packages:
   - name: MJAN29SeptCP4iProject
     version: "1.0"
@@ -46,6 +57,16 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
 - serviceName: project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:SFBasicAuthCP4iCreateAccount
+  packages:
+  - name: MJAN29SeptCP4iProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.mjan29septcp4i.integrations:DBTest
   packages:
   - name: MJAN29SeptCP4iProject
     version: "1.0"

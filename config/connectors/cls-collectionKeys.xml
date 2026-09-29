@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<services>
+    <cloudstreamsCollectionKeys serviceName="WmCloudStreams.SoapVS">
+        <servicesKeys>
+            <keyDetails collectionKey="project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:SFBasicAuthCP4iCreateAccount" connectorServiceName="project.mjan29septcp4i.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:SFBasicAuthCP4iCreateAccount"/>
+        </servicesKeys>
+    </cloudstreamsCollectionKeys>
+</services>

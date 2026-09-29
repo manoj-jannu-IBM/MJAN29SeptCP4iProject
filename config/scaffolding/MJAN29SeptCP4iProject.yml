@@ -168,6 +168,40 @@ services:
     version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
+- serviceName: project.mjan29septcp4i.integrations:DBTestTPP
+  packages:
+  - name: MJAN29SeptCP4iProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: JDBC_without_required_jar
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: DADA_RefDataDocTypeTests
+    version: "1.0"
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: SIQAJDBCAdapterTests.adapterServices:getData
+  packages:
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.mjan29septcp4i.integrations:GlobalvariableTest
   packages:
   - name: MJAN29SeptCP4iProject
